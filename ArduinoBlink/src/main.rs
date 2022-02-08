@@ -5,8 +5,6 @@
 
 use core::panic::PanicInfo;
 
-use arduino_hal::Peripherals;
-
 //Define the panic handler function
 //The return type "!" is equal to "Never" it means this function is not allow to return and checks it at compile time
 #[panic_handler]
@@ -17,12 +15,10 @@ fn panic(_info: &PanicInfo) -> ! {
 //Define the entry point of the program
 #[arduino_hal::entry]
 fn main() -> ! {
-	let peripherals: Peripherals = arduino_hal::Peripherals::take().unwrap();	//Use the struct Peripherals to get access to the hardware
-	let pins: Pins = arduino_hal::pins!(peripherals);							//Use macro function to get the pins from the peripherals
+	let peripherals = arduino_hal::Peripherals::take().unwrap();	//Use the struct Peripherals to get access to the hardware
+	let pins = arduino_hal::pins!(peripherals);							//Use macro function to get the pins from the peripherals
 
 	let mut led = pins.d13.into_output();
-
-	led.set_high();
 
 	loop {
 		led.toggle();
