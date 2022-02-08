@@ -1,0 +1,6 @@
+#We are telling the compiler to build out code with the configurations that are inside this json file
+[build]
+target = "avr-atmega328p.json"
+
+[unstable]
+build-std = ["core"]
