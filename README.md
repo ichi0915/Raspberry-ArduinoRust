@@ -64,3 +64,19 @@ sudo apt install avr-libc gcc-avr pkg-config avrdude
 ## Repo structure
 
 This repo will contain different programs that will be label from 0 to f64::INFINITY, they might be in increase difficulty but as we progress we are going to explain the new code/functionality in the form of comments example in project 3 we use a new function and comment its usage, so the project 4 will not explain that section of the code because the previous one explained it.
+
+## Compiling the projects and flashing to Arduino
+To compile simple cd into any project and run:
+```bash
+cargo build
+```
+
+Then to Flash to an Arduino you need to connect the Arduino to the pi and use the following command:
+```bash
+sudo avrdude -p m328p -c arduino -P /dev/ttyACM0 -b 115200 -U flash:w:target/avr-atmega328p/debug/ArduinoBlink.elf
+# -p Is the type of processor we are programming to
+# -c Specifies the programmer we are using
+# -P Is the port
+# -b The baud rate
+# -U The operation which is to the flash : a writeable section : and we are going to write the .elf file
+```
