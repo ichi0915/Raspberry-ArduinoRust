@@ -80,3 +80,8 @@ sudo avrdude -p m328p -c arduino -P /dev/ttyACM0 -b 115200 -U flash:w:target/avr
 # -b The baud rate
 # -U The operation which is to the flash : a writeable section : and we are going to write the .elf file
 ```
+
+## Projects
+
+* 0.- [Arduino Blink](arduino_blink/README.md)
+* 1.-
