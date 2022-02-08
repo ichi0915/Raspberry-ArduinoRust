@@ -1,4 +1,5 @@
-#We are telling the compiler to build out code with the configurations that are inside this json file
+#To tell the compiler we want to compile to the avr target we need to create this .cargo folder and inside we create a this config.toml file with the configuration
+#Here we are telling the compiler to build the code with the configurations that are inside this json file
 [build]
 target = "avr-atmega328p.json"
 
