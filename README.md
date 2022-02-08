@@ -73,7 +73,7 @@ cargo build
 
 Then to Flash to an Arduino you need to connect the Arduino to the pi and use the following command:
 ```bash
-sudo avrdude -p m328p -c arduino -P /dev/ttyACM0 -b 115200 -U flash:w:target/avr-atmega328p/debug/ArduinoBlink.elf
+sudo avrdude -p m328p -c arduino -P /dev/ttyACM0 -b 115200 -U flash:w:target/avr-atmega328p/debug/arduino_blink.elf
 # -p Is the type of processor we are programming to
 # -c Specifies the programmer we are using
 # -P Is the port
