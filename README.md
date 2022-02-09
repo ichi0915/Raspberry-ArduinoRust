@@ -81,7 +81,18 @@ sudo avrdude -p m328p -c arduino -P /dev/ttyACM0 -b 115200 -U flash:w:target/avr
 # -U The operation which is to the flash : a writeable section : and we are going to write the .elf file
 ```
 
+## Hardware Required:
+If you wish to run the projects on your own this are some of the components you may need.
+
+* Raspberry pi
+* Arduino Uno
+* USB 2.0 cable type A/B (To connect Raspberry to Arduino)
+* Buttons
+* LEDs
+* Resistors
+* Breadboard and jumpers.
+
 ## Projects
 
-* 0.- [Arduino Blink](arduino_blink/README.md)
+* 0.- [Arduino Blink](arduino_blink)
 * 1.- [Button toggle led](button_toggle_led)
