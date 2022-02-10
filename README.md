@@ -95,4 +95,5 @@ If you wish to run the projects on your own this are some of the components you 
 ## Projects
 
 * 0.- [Arduino Blink](arduino_blink)
-* 1.- [Button toggle led](button_toggle_led)
+* 1.- [Button Toggle LED](button_toggle_led)
+* 2.- [Write To Serial](write_to_serial_console)
