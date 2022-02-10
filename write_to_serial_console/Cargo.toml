@@ -1,0 +1,13 @@
+[package]
+name = "write_to_serial_console"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+panic-halt = "0.2.0"
+ufmt = "0.1.0"
+
+[dependencies.arduino-hal]
+git = "https://github.com/Rahix/avr-hal"
+rev = "92d540c"
+features = ["arduino-uno"]
