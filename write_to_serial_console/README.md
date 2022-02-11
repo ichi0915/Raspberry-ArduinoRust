@@ -32,7 +32,7 @@ stty [-F DEVICE | --file=DEVICE] [SETTING]...
 ```
 For our case we will use the following command to set the the port:
 ```bash
-sudo stty 9600 -F /dev/ttyUSB0 raw -echo
+sudo stty 9600 -F /dev/ttyACM0 raw -echo
 ```
 
 And the following command to read from the port:
